@@ -1,0 +1,36 @@
+spring:
+  profiles:
+    active: local
+
+
+---
+spring:
+  profiles: local
+  datasource:
+    driverClassName: org.h2.Driver
+    url: jdbc:h2:~/test
+    username: sa
+    password:
+  security:
+    basic:
+      enable: false
+    ignored: /**
+  h2:
+    console:
+      path: /h2console
+      enabled: true
+
+  jpa:
+    hibernate:
+      hbm2ddl:
+        auto: validate
+      ejb:
+        naming_strategy: org.hibernate.cfg.ImprovedNamingStrategy
+      use-new-id-generator-mappings: true
+    generate-ddl: true
+    show-sql: true
+    database: h2
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
