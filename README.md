@@ -1,7 +1,7 @@
 # kakaopay
-
-개발 프레임워크
-  Java 8 + Spring Boot + JPA
+\n
+\n개발 프레임워크
+\n  Java 8 + Spring Boot + JPA
     
 테이블 설계
   payment, payment_cancel 테이블 구성.
